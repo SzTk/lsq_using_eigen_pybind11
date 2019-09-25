@@ -104,11 +104,11 @@ setup(
     author_email='takayuki@darkhaloes.com',
     description='',
     long_description='',
+    packages=find_packages(),
+    package_dir={'svd_lsq': './src/svd_lsq'},
     ext_modules=ext_modules,
     install_requires=['pybind11>=2.4'],
     setup_requires=['pybind11>=2.4'],
     cmdclass={'build_ext': BuildExt},
     zip_safe=False,
 )
-
-
